@@ -5,6 +5,7 @@
 package atividadeavaliativa1;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -36,11 +37,12 @@ public class Main {
         int opcao = -1;
         
         do {
-            System.out.println( "1. Cadastrar atendimento\n" +
+            System.out.println( "Opções:" + 
+                                "1. Cadastrar atendimento\n" +
                                 "2. Associar um veterinário a uma sala\n" +
                                 "3. Atribuir atendimento a uma sala\n" +
-                                "4. Exibir todos os atendimentos atribuídos a uma sala específica. Informe também o total de atendimentos ao final.\n" +
-                                "5. Informar a quantidade total de atendimentos finalizados por cada sala\n" +
+                                "4. Exibir todos os atendimentos atribuídos a uma sala específica\n" +
+                                "5. Exibir a quantidade total de atendimentos finalizados por cada sala\n" +
                                 "6. Buscar atendimentos por status. É necessário exibir os detalhes do atendimento, incluindo sala e veterinário.\n" +
                                 "7. Exibir os detalhes completos de um atendimento específico\n" +
                                 "0. Sair");
@@ -49,10 +51,48 @@ public class Main {
             
             switch (opcao) {
                 case 1: 
+                    String codigo = new String();
+                    String nomeAnimal = new String();
+                    String especie = new String();
+                    String nomeTutor = new String();
+                    Date data = new Date();
+                    String status = new String();
+                    String observacoes = new String();
+                    
+                    
+                    atendimentos.add(new Atendimento(codigo, nomeAnimal, especie, nomeTutor, data, status, observacoes));
+                    break;
+                
+                case 2: 
                     
                     
                     break;
                 
+                case 3: 
+                    
+                    
+                    break;
+                
+                case 4: 
+                    
+                    
+                    break;
+                
+                case 5: 
+                    
+                    
+                    break;
+                
+                case 6: 
+                    
+                    
+                    break;
+                
+                case 7: 
+                    
+                    
+                    break;
+
                 default: break;
             }
         } while (opcao != 0);

@@ -28,8 +28,15 @@ public class Sala {
     }
     
     public boolean atribuirAtendimento(Atendimento atendimento){
-        //if atendimentos
-        return true;
+        if (atendimentos.isEmpty()){
+            atendimentos.add(atendimento);
+            return true;
+        }
+        else if (atendimentos.getFirst().getProcedimento() == atendimento.getProcedimento()) {
+            atendimentos.add(atendimento);
+            return true;
+        }
+        return false;
     }
 
     /**

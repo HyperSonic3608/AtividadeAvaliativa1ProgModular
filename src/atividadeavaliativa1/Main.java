@@ -59,12 +59,40 @@ public class Main {
                     String status = new String();
                     String observacoes = new String();
                     
+                    System.out.println("Digite o código do atendimento:");
+                    codigo = scanner.nextLine();
+                    
+                    System.out.println("Digite o nome do animal:");
+                    nomeAnimal = scanner.nextLine();
+                    
+                    System.out.println("Digite a espécie do animal:");
+                    especie = scanner.nextLine();
+                    
+                    System.out.println("Digite o nome do tutor:");
+                    nomeTutor = scanner.nextLine();
+                    
+                    System.out.println("Digite o status do atendimento:");
+                    status = scanner.nextLine();
+                    
+                    System.out.println("Digite as obsevações do atendimento:");
+                    observacoes = scanner.nextLine();
                     
                     atendimentos.add(new Atendimento(codigo, nomeAnimal, especie, nomeTutor, data, status, observacoes));
                     break;
                 
                 case 2: 
+                    System.out.println("Digite o número da sala:");
+                    int numeroSala = scanner.nextInt();
+                    scanner.nextLine();
                     
+                    System.out.println("Digite o CPF do veterinário:");
+                    String cpf = scanner.nextLine();
+                    
+                    for (Veterinario vet : veterinarios) {
+                        if (vet.getCpf().equals(cpf)) {
+                            
+                        }
+                    }
                     
                     break;
                 
